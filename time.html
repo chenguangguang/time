@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		
+	</head>
+	<style>
+		p{
+			font-size: 50px;
+			text-align: center;
+			margin-top: 20%;
+		}
+		p:nth-child(1){
+			color: aqua;
+		}
+		p:nth-child(2){
+			color: darkorange;
+		}
+		p:nth-child(3){
+			color:lawngreen;
+		}
+		p:nth-child(4){
+			color:pink;
+		}
+		p:nth-child(5){
+			color:darkturquoise;
+		}
+		p:nth-child(6){
+			color:plum;
+		}
+	</style>
+	<body>
+		<script>
+			var x = new Date();
+			var time = x.getHours();
+			if (time>=7 && time<=8) {
+				document.write("<p>该起床啦🌞</p>")
+			}else if(time>=11 && time<12){
+				document.write("<p>该吃饭了🍨</p>")
+			}else if(time>=12 && time<13){
+				document.write("<p>午安亲爱的🛌</p>")
+			}else if(time>=14 && time<18){
+				document.write("<p>认真学习哈📃</p>")
+			}else if(time>=18 && time<21){
+				document.write("<p>爱你❤</p>")
+			}else if(time>=22 && time<23){
+				document.write("<p>你家亲爱的放学了🚴</p>")
+			}else if(time>=23 && time<24){
+				document.write("<p>该睡觉了晚安🛌</p>")
+			}
+		</script>
+	</body>
+</html>
